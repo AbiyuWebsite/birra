@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D764F1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:padding="7dp"
+        android:shadowColor="@color/white"
+        android:text="Register Form"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_below="@+id/reg"
+        android:textSize="15dp"
+        android:layout_marginLeft="3dp"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="5dp"
+        android:id="@+id/name"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:layout_below="@+id/name"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/age"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/age"
+        android:id="@+id/sex">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEX"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sex"
+        android:id="@+id/dept"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Department"
+          android:textSize="15dp"
+          android:drawableLeft="@drawable/edit"
+          android:drawablePadding="3dp"
+          android:textColor="@color/white"
+          android:layout_marginLeft="5dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:entries="@array/dept"
+            />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/dept"
+    android:id="@+id/img">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/photo"
+        android:layout_marginLeft="8dp"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:id="@+id/fav"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Football"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/football"
+            android:drawablePadding="2dp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listen Music"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/music"
+            android:drawablePadding="2dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fav"
+        android:id="@+id/button">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_margin="8dp"
+            android:onClick="Cancel"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:layout_margin="8dp"
+            android:onClick="save"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

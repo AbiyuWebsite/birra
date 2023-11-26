@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src=""></script>
+</head>
+<body>
+        <header>
+            <div class="menu" onclick="sideBarShow()">
+            <div class="him"></div>
+            <div class="him"></div>
+            <div class="him"></div>
+        <nav>
+            
+       </div>
+            <label class="logo">Birra</label>
+            <ul class="ul" >
+                <li><a href="#" id="selected">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="menu"><a href="#">Service</a>
+                <span class="drop_down"></span>
+                    <ul id="content">
+                        <li class="html"><a href="html.html">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">Php</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+               
+            </ul>
+        </nav>
+        </header>
+       <div><h2>Wellcome to my page</h2></div>
+        <div class="container">
+                <div class="photo"><img src="Eda/computer.jpg" alt="Lady image">
+                    <a href="">download image.</a>
+                </div>
+                <div class="emoj"><img src="Eda/emoj.jpg" alt="photo">
+                    <a href="html.html">Downloaded this Emoj</a>
+                </div>
+                <div class="fasil"><img src="Eda/fasil.jpg" alt="photo">
+                    <a href="html.html">Download photo</a>
+                </div>
+        </div>
+
+        <div class="sub_container">
+
+                <div class="celebrate"><img src="Eda/celebrate.jpg" alt="photo">
+                      <a href="html.html">Download photo</a>
+                </div>
+                <div class="absport"><img src="Eda/Absport.png" alt="photo">
+                <a href="html.html">Download photo</a>
+            </div>
+            <div class="abay"><img src="Eda/AbayWhite.png" alt="photo">
+                <a href="html.html">Download photo</a>
+            </div>
+
+        </div>
+        <div class="social_icon">
+            <a href="@Birra29"><img src="Social/telegram.png" alt="Telegram" width="24px" height="24px" border-radius="50%"></a>
+            <a href=""><img src="Social/facebook.png" alt="facebook" width="24px" height="24px" border-radius="50%"></a>
+            <a href=""><img src="Social/instagram.png" alt="instagram" width="24px" height="24px" border-radius="50%"></a>
+
+        </div>
+       <!--<div class="fa">
+            <i class="fa-brands fa-facebook">Facebook</i>
+            <i class="fa-brands fa-telegram">Telegram</i>
+            <i class="fa-brands fa-instagram"> Instagram</i>
+            <i class="fa-brands fa-twitter">Tiwtter</i>
+            <i class="fa-brands fa-github"> gitub</i>
+            <i class="fa-solid fa-envelope"> email</i>
+            <i class="fa-brands fa-tiktok">tiktok</i>
+        </div>--> 
+        
+
+        <script>
+            
+            function sideBarShow(){
+                const sidebar=document.querySelector('.menu');
+                const bar=document.getElementsByClassName('.ul');
+                sidebar.style.display="flex";
+                bar.style.display="flex";
+                bar.style.display.flex="column";
+
+            }
+          
+        </script>
+       
+    
+</body>
+</html>

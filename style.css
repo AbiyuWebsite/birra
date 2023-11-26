@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 120px;
+    margin-left: 80px;
+}
+header{
+    background-color: rgb(39, 128, 163);
+    color: white;
+    width: 100%;
+  
+}
+nav{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: rgb(39, 128, 163);
+    color: white;
+  
+}
+ ul{
+    float: right;
+    margin-right: 90px;
+
+}
+ ul li{
+    display: inline-block;
+    padding: 0px 50px;
+       
+}
+ ul li a{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: rgb(131, 82, 8)
+}
+#selected{
+    color: rgb(146, 144, 144);
+}
+#selected:hover{
+    color: rgb(131, 82, 8)
+}
+.drop_down{
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid white;
+    width: 0;
+    height: 0;
+    position: relative;
+    line-height: 80px;
+    padding: 1px;
+    top: 14px;
+    left: 6px;
+}
+
+span{
+    color: black;
+}
+
+#content{
+     display: none;
+}
+#menu:hover #content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    max-width: 200px; 
+}
+#content li{
+    padding: 10px 5px;
+    margin-left: 50px;
+}
+#content li a{
+    color: black;
+    text-align: right;
+    padding: 2px 5px;
+}
+#content li a:hover{
+     color: rgb(131, 82, 8)
+}
+h2{
+    color: rgb(22, 84, 109);
+    font-size: 29px;
+    font-weight: bold;
+    font-family: serif;
+    position: relative;
+    left: 50px;
+    top: 25px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    position: relative;
+    left: 150px;
+    top: 29px;
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+     margin-left: 29px;
+    margin-top: 20px;
+
+}
+.photo img{
+    border-radius: 20px;
+    border: 1px solid  rgb(22, 84, 109);
+    width: 290px;
+    height: 250px;
+}
+.photo img:hover{
+    filter: grayscale(50%);
+    transition: all .4s ease-in-out;
+    transform: rotateY(10deg);
+}
+.photo a{
+    color: black;
+    font-weight: bold;
+}
+.photo a:hover{
+    color: rgb(39, 128, 163);
+    transition: 0.5s;
+}
+.emoj{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 20px; 
+}
+.emoj img{
+    border-radius: 20px;
+    border: 1px solid  rgb(39, 128, 163);
+    width: 290px;
+    height: 250px;
+}
+.emoj img:hover{
+    filter: grayscale(50%);
+    transition: all .4s ease-in-out;
+    transform: rotateY(10deg);
+}
+.emoj a{
+    color: black;
+    font-weight: bold;
+}
+.emoj a:hover{
+    color: rgb(22, 84, 109);
+    transition: 0.5s;
+} 
+
+.fasil{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 20px; 
+}
+.fasil img{
+    border-radius: 20px;
+    border: 1px solid  rgb(39, 128, 163);
+    width: 290px;
+    height: 250px;
+}
+.fasil img:hover{
+    filter: grayscale(50%);
+    transition: all .4s ease-in-out;
+    transform: rotateY(10deg);
+}
+.fasil a{
+    color: black;
+    font-weight: bold;
+}
+.fasil a:hover{
+    color: rgb(22, 84, 109);
+    transition: 0.5s;
+} 
+
+.sub_container{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    position: relative;
+    left: 150px;
+    top: 29px;
+}
+
+.celebrate{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 20px; 
+}
+.celebrate img{
+    border-radius: 20px;
+    border: 1px solid  rgb(39, 128, 163);
+    width: 290px;
+    height: 250px;
+}
+.celebrate img:hover{
+    filter: grayscale(50%);
+    transition: all .4s ease-in-out;
+    transform: rotateY(10deg);
+}
+.celebrate a{
+    color: black;
+    font-weight: bold;
+}
+.celebrate a:hover{
+    color: rgb(22, 84, 109);
+    transition: 0.5s;
+} 
+
+.absport{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 20px; 
+}
+.absport img{
+    border-radius: 20px;
+    border: 1px solid  rgb(39, 128, 163);
+    width: 290px;
+    height: 250px;
+}
+.absport img:hover{
+    filter: grayscale(50%);
+    transition: all .4s ease-in-out;
+    transform: rotateY(10deg);
+}
+.absport a{
+    color: black;
+    font-weight: bold;
+}
+.absport a:hover{
+    color: rgb(22, 84, 109);
+    transition: 0.5s;
+}
+.abay{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 20px; 
+}
+.abay img{
+    border-radius: 20px;
+    border: 1px solid  rgb(39, 128, 163);
+    width: 290px;
+    height: 250px;
+}
+.abay img:hover{
+    filter: grayscale(50%);
+    transition: all .4s ease-in-out;
+    transform: rotateY(10deg);
+}
+.abay a{
+    color: black;
+    font-weight: bold;
+}
+.abay a:hover{
+    color: rgb(22, 84, 109);
+    transition: 0.5s;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+     margin-left: 40px;
+    margin-top: 20px;
+     position: relative;
+    top: 40px;
+    box-shadow: 5px 10px 12px black;
+}
+.about img{
+     border-radius: 20px;
+    width: 500px;
+    height: 350px;
+}
+.about img:hover{
+    filter: grayscale(50%);
+    transition: all .4s ease-in-out;
+    transform: rotateY(10deg);
+}
+.about p{
+    color: black;
+    margin-left: 10px;
+    margin-top: 150px;
+    font-size: 18px;
+}
+
+.pdf{
+    display: flex;
+    flex-direction: column;
+     margin-left: 40px;
+    margin-top: 20px;
+     position: relative;
+    top: 29px;
+    width: 100%;
+}
+
+.pdf{
+    color: rgb(22, 84, 109);
+    margin-left: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.menu{
+    display: none;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    float: right;
+    position: absolute;
+    top: 29px;
+    right: 50px;
+}
+.him{
+    height: 6px;
+    width: 25px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    margin: 2px;
+}
+.social_icon{
+    display: flex;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 50px;
+    margin-top: 40px;
+}
+.social_icon a{
+    padding: 2px 10px;
+}
+.fa{
+    display:none;
+    
+}
+#footer
+{
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+     @media screen and (max-width:900px) {
+        .menu{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+        }
+        h2{
+            display: none;
+        }
+        
+        header{
+            width: 100%;
+            height: 100vh;
+        }
+        .logo{
+            padding: 5px;
+        }
+       
+        ul li{
+            display: none;
+            position: relative;
+            top: 150px;
+        }
+        ul .show{
+            display: block;
+        }
+        .container{
+            display: none;
+        }
+        .sub_container{
+            display: none;
+        }
+    }
+   
