@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="website develpment Graphyics design"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome">
+    <meta name="author" content="Abyu tezera birra Web-Develpment">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8,html ,css,javascript">
     <title>Portifolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <script src=""></script>
 </head>
 <body>
+    
         <header>
-            <div class="menu" onclick="sideBarShow()">
-            <div class="him"></div>
-            <div class="him"></div>
-            <div class="him"></div>
-        <nav>
             
-       </div>
-            <label class="logo">Birra</label>
-            <ul class="ul" >
+        <nav>
+          <div class="menu_bar" onclick="sideBarShow()">
+                        <div class="him"></div>
+                        <div class="him"></div>
+                        <div class="him"></div>
+                    </div>  
+            <label class="logo"><img src="Aphoto.png" alt="photo" >
+            <ul class="sidebar" id="ul">
                 <li><a href="#" id="selected">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="Portifolio.html">Portifolio</a></li>
                 <li id="menu"><a href="#">Service</a>
                 <span class="drop_down"></span>
                     <ul id="content">
@@ -32,42 +38,40 @@
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
+                
+            
                
             </ul>
         </nav>
         </header>
        <div><h2>Wellcome to my page</h2></div>
         <div class="container">
-                <div class="photo"><img src="Eda/computer.jpg" alt="Lady image">
+                <div class="computer5"><img src="Eda/computer5.jpg" alt="Lady image">
+                <p class="para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugit ipsum doloribus adipisci architecto quam, nostrum tempora hic voluptas tenetur incidunt at natus. Dicta, quis? Cum libero aut aliquam illum!
+                </p>
                     <a href="">download image.</a>
                 </div>
-                <div class="emoj"><img src="Eda/emoj.jpg" alt="photo">
+                <div class="computer"><img src="Eda/computer.jpg" alt="photo">
                     <a href="html.html">Downloaded this Emoj</a>
                 </div>
-                <div class="fasil"><img src="Eda/fasil.jpg" alt="photo">
+                <div class="computer1"><img src="Eda/computer1.jpg" alt="photo">
                     <a href="html.html">Download photo</a>
                 </div>
-        </div>
+       
 
-        <div class="sub_container">
-
-                <div class="celebrate"><img src="Eda/celebrate.jpg" alt="photo">
+                <div class="computer4"><img src="Eda/computer4.jpg" alt="photo">
                       <a href="html.html">Download photo</a>
                 </div>
-                <div class="absport"><img src="Eda/Absport.png" alt="photo">
+                <div class="computer3"><img src="Eda/computer3.jpg" alt="photo">
                 <a href="html.html">Download photo</a>
             </div>
-            <div class="abay"><img src="Eda/AbayWhite.png" alt="photo">
+            <div class="computer2"><img src="Eda/computer2.jpg" alt="photo">
                 <a href="html.html">Download photo</a>
             </div>
 
         </div>
-        <div class="social_icon">
-            <a href="@Birra29"><img src="Social/telegram.png" alt="Telegram" width="24px" height="24px" border-radius="50%"></a>
-            <a href=""><img src="Social/facebook.png" alt="facebook" width="24px" height="24px" border-radius="50%"></a>
-            <a href=""><img src="Social/instagram.png" alt="instagram" width="24px" height="24px" border-radius="50%"></a>
-
-        </div>
+        
        <!--<div class="fa">
             <i class="fa-brands fa-facebook">Facebook</i>
             <i class="fa-brands fa-telegram">Telegram</i>
@@ -79,19 +83,36 @@
         </div>--> 
         
 
-        <script>
+      <!--<script>
             
             function sideBarShow(){
-                const sidebar=document.querySelector('.menu');
-                const bar=document.getElementsByClassName('.ul');
-                sidebar.style.display="flex";
-                bar.style.display="flex";
-                bar.style.display.flex="column";
-
+                const sidebar=document.querySelector('.sidebar');
+                sidebar.addEventListener('click',()=>
+                {
+                    sidebar.style.display='block';
+                });
             }
-          
+        </script>-->  
+        <script>
+            function sideBarShow(){
+                var bar = document.getElementById('ul');
+                bar.classList.toggle('show');
+            }
         </script>
-       
+       <footer >
+        <div class="social_icon">
+            <a href="https://t.me/Birra29" class="fb"><img src="Social/telegram.png" alt="Telegram" width="32px" height="32px" border-radius="50%"  ></a>
+            <a href="https://www.facebook.com/abiyu.tezera.5" class="tele"><img src="Social/facebook.png" alt="facebook" width="32px" height="32px" border-radius="50%"></a>
+            <a href="https://instagram.com/abiyu589?igshid=MzMyNGUyNmU2YQ==" class="insta"><img src="Social/instagram.png" alt="instagram" width="32px" height="32px" border-radius="50%"></a>
+
+            <a href="https://youtube.com/@ab-sport4512?si=N2g2PHGMe5RPvHMZ" class="insta"><img src="Social/youtube.png" alt="instagram" width="32px" height="32px" border-radius="50%"></a>
+
+            <!--a href="https://mail.google.com/abiyutezera5@gmail.com" class="insta"><img src="Social/youtube.png" alt="instagram" width="32px" height="32px" border-radius="50%"></a>-->
+            
+
+        </div>
+        &copy;2023 Abiyu Tezera personal Website. All rights reserved
+    </footer>
     
 </body>
 </html>
